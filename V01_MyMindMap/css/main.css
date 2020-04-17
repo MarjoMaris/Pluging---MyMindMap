@@ -1,0 +1,192 @@
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+@font-face {
+  font-family:Poppins-Regular;
+  src: url('../fonts/Poppins/Poppins-Regular.otf'); 
+}
+
+@font-face {
+  font-family:Poppins-Bold;
+  src: url('../fonts/Poppins/Poppins-Bold.otf'); 
+}
+
+.alba.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.alba .innerWrapper {
+  display: grid;
+  grid-template-columns:  1fr;
+  padding: 15px;
+}
+
+.alba p.texte {
+  font-size: 16px;
+}
+
+.alba .boxe {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.alba .boxOne {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.alba .innerBoxOne {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.alba .innerBoxTwo {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.alba .innerBoxTwo p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.alba .innerBoxTwo p:last-child {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.alba .innerTable {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.alba .innerTable table {
+  width: 100%;
+}
+
+.alba .rightImage {
+  padding-top: 20px;
+}
+
+.alba .rightImage img {
+  width: 100%;
+}
+
+body, html{
+	height: auto;
+}
+
+.alba a{
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  outline-color: #1E90FF;
+}
+
+.alba a:visited {
+  color: #1E90FF;
+}
+
+.alba a:active {
+  color: #1E90FF;
+}
+
+
+/* -------------------------------------------------- */
+
+.alba p.titre1{
+  font-family:Poppins-Bold;
+  font-size: 26px;
+  color : #3B8686;
+}
+
+.alba p.titre2{
+  font-family:Poppins-Bold;
+  color : #3B8686;
+}
+
+.alba p.texte {
+  font-family:Poppins-Regular;
+  font-size: 16px;
+  color : #3B8686;
+  text-align: left;
+}
+
+
+/* --------------------------------------------------
+[ Table ]*/
+
+.alba .container-table100 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap-reverse;
+  padding: 30px 10px; /* La taille du fond*/
+ 
+}
+
+.alba table {
+  border: 1px solid #CCCCCC;
+  background: white;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+.alba table * {
+  position: relative;
+}
+.alba table td, table th {
+  
+  padding-left: 8px;
+}
+.alba table thead tr {
+  height: 61px;
+  background: -webkit-linear-gradient(45deg, #1E90FF, #00BFFF);
+  background: -o-linear-gradient(45deg, #1E90FF, #00BFFF);
+  background: -moz-linear-gradient(45deg, #1E90FF, #00BFFF);
+  background: linear-gradient(45deg, #1E90FF, #00BFFF);
+}
+
+.alba table tbody td {
+  height: 61px;
+  border: 1px solid #CCCCCC;
+}
+.alba table td, table th {
+  text-align: left;
+}
+
+.alba .table100-head th{ /*Titre : couleur, taille, police*/
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.alba tbody tr:nth-child(even) {
+  background-color: #eeeeee; 
+}
+
+.alba tbody td {
+  font-size: 16px;
+  line-height: normal;
+}
+
+@media all and (max-width: 768px) {
+  .alba .rightImage {
+    display: none;
+  }
+  .alba.wrapper {
+    grid-template-columns: 1fr;
+  }
+  .alba table tbody td {
+    height: 45px;
+    font-size: 14px;
+  }
+}
